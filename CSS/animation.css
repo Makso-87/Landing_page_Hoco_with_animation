@@ -1,0 +1,224 @@
+/*Анимация заголовка h1 блока 1 "Главный экран"*/
+@-webkit-keyframes h1_aimation {
+	from { top: 50px; opacity: 0;  }
+	to { top: 0px; opacity: 1; }
+	
+}
+
+.header_h1 {
+		-webkit-animation: h1_aimation 1s ease-out;
+		-webkit-animation-delay: 0.5s;
+		animation-fill-mode: forwards;
+	}
+
+/*Анимация заголовка h2 блока 1 "Главный экран"*/
+
+@-webkit-keyframes h2_aimation {
+	from { top: 50px; opacity: 0;  }
+	to { top: 0px; opacity: 1; }
+	
+}
+
+/*Анимация изображения блока 1 "Главный экран"*/
+
+@keyframes mine_img {
+	from { left: -800px; opacity: 1;}
+	to {left: 0px; opacity: 1;}
+}
+
+.left-side_img {
+	animation:  mine_img 0.5s 1.5s cubic-bezier(0.0,0.8,1,1) forwards;
+}
+
+/*Анимация формы заказа блока 1 "Главный экран"*/
+
+@keyframes order {
+	0% { right: -800px; opacity: 1;}
+	50% { right: 40px; }
+	95% { right: -5px; }
+	100% { right: 0px; opacity: 1;}
+}
+
+.form_order_anim {
+	animation: order 0.5s 2s forwards cubic-bezier(0.0,0.8,1,1);
+
+}
+
+/*Анимация текста низа блока 1 "Главный экран"*/
+
+@keyframes bottom_text {
+	from { top: -50px; opacity: 0; }
+	to { top: 0; opacity: 1; }
+}
+
+.bottom_text_anim {
+	animation: bottom_text 0.5s 2.5s ease-out forwards;
+}
+
+.header_h2 {
+		-webkit-animation: h2_aimation 1s ease-out;
+		-webkit-animation-delay: 1s;
+		animation-fill-mode: forwards;
+	}
+
+/*Анимация заголовка блока 2 "Описание"*/
+@keyframes h2block-2 {
+	from { top: 100px; opacity: 0; }
+	to { top: 50px; opacity: 1; }
+}
+
+.h2block-2 {
+	animation: h2block-2 1s ease-out forwards;
+}
+
+/*Анимация заголовков блока 3 "Фото"*/
+
+@keyframes h2block-3 {
+	from { top: 50px; opacity: 0; }
+	to { top: 0px; opacity: 1; }
+}
+
+.h2block-3 {
+	animation: h2block-3 1s ease-out forwards;
+}
+
+@keyframes h3block-3 {
+	from { left: -200px; opacity: 1;}
+	to { left: 0px; opacity: 1;}
+}
+
+.h3block-3 {
+	animation: h3block-3 1s 0.5s ease-out forwards;
+}
+
+/*Анимация левого абзаца блока 3 "Фото"*/
+@keyframes par_block-3 {
+	from { top: -500px; opacity: 0;}
+	to { top: 0px; opacity: 1;}
+}
+.par_block-3 {
+	animation: par_block-3 0.5s 1s ease-out forwards;
+}
+
+/*Анимация слайдера блока 3 "Фото"*/
+
+@keyframes block_for_slider {
+	from { right: -500px; opacity: 1;}
+	to { right: 0px; opacity: 1; transform: rotate(-360deg);}
+}
+.block_for_slider {
+	animation: block_for_slider 0.5s 1.5s ease-out forwards;
+}
+
+/*анимация списка технических характеристик блока 3 "Фото"*/
+
+@keyframes technical_block_3 {
+	from { right: -500px; opacity: 0;}
+	to { right: 0px; opacity: 1; }
+}
+.technical_block_3 {
+	animation: technical_block_3 1s 1.5s ease-out forwards;
+}
+
+/*Анимация кнопки "Купить" блока 3 "Фото"*/
+
+@keyframes button_block_3 {
+	from { top: -500px; opacity: 0;}
+	to { top: 0px; opacity: 1;}
+}
+.button_block_3 {
+	animation: button_block_3 1s  ease-out forwards;
+}
+
+/*Анимация заголовка блока 4 "Отзывы"*/
+
+@keyframes h2block-4 {
+	from { top: 100px; opacity: 0;}
+	to { top: 50px; opacity: 1;}
+}
+.h2block-4 {
+	animation: h2block-4 1s ease-out forwards;
+}
+
+/*Анимация 1-й фотографии блока 4 "Отзывы"*/
+
+@keyframes img1_block-4 {
+	from { left: -500px; opacity: 1;}
+	to { left: 0px; opacity: 1; transform: rotate(360deg);}
+}
+.img1_block-4 {
+	animation: img1_block-4 1s ease-out forwards;
+}
+/*Анимация 2-й фотографии блока 4 "Отзывы"*/
+
+@keyframes img2_block-4 {
+	from { opacity: 1;}
+	to { opacity: 1; transform: rotateY(360deg) ; }
+}
+.img2_block-4 {
+	animation: img2_block-4 1s ease-out forwards;
+}
+
+/*Анимация 3-й фотографии блока 4 "Отзывы"*/
+
+@keyframes img3_block-4 {
+	from { right: -500px; opacity: 1;}
+	to { right: 0px; opacity: 1; transform: rotate(-360deg);}
+}
+.img3_block-4 {
+	animation: img3_block-4 1s ease-out forwards;
+}
+
+/*Анимация абзацев блока 4 "Отзывы"*/
+
+@keyframes pars_block-4 {
+	from { top: 50px; opacity: 0;}
+	to { top: 0px; opacity: 1;}
+}
+.pars_block-4 {
+	animation: pars_block-4 1s 1s ease-out forwards;
+}
+
+/*Анимация подписи 1-й фотографии блока 4 "Отзывы"*/
+
+@keyframes podpis1_block-4 {
+	from { left: -500px; opacity: 0;}
+	to { left: 0px; opacity: 1;}
+}
+.podpis1_block-4 {
+	animation: podpis1_block-4 1s 0.5s ease-out forwards;
+}
+
+/*Анимация подписи 2-й фотографии блока 4 "Отзывы"*/
+
+@keyframes podpis2_block-4 {
+	from { top: -500px; opacity: 0;}
+	to { top: 0px; opacity: 1;}
+}
+.podpis2_block-4 {
+	animation: podpis2_block-4 1s 0.5s ease-out forwards;
+}
+
+/*Анимация подписи 3-й фотографии блока 4 "Отзывы"*/
+
+@keyframes podpis3_block-4 {
+	from { right: -500px; opacity: 0;}
+	to { right: 0px; opacity: 1;}
+}
+.podpis3_block-4 {
+	animation: podpis3_block-4 1s 0.5s ease-out forwards;
+}
+
+/*Анимация заголовка блока 5 "Доставка"*/
+
+@keyframes h2block-5 {
+	from { top: 100px; opacity: 0;}
+	to { top: 50px; opacity: 1;}
+}
+.h2block-5 {
+	animation: h2block-5 1s ease-out forwards;
+}
+
+.active {
+	opacity: 1;
+}

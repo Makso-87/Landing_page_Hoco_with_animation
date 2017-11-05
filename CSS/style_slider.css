@@ -1,0 +1,122 @@
+
+
+#block-for-slider {
+    position: relative;
+    width: 400px;
+    height: 306px;
+    margin: 0 auto;
+    margin-top: 60px;
+    opacity: 0;
+    /*box-shadow: 0 0 2px 0px;*/
+    box-sizing: border-box;
+}
+
+#viewport {
+    background: #fff;
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    border: 1px solid #a9a1bd;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 5);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+#slidewrapper ul, #slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+#slidewrapper li {
+    text-align: center;
+    width: calc(100%/5);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    /*width: 100%;*/
+}
+/* Стили для кнопок переключения изображений*/
+#prev-btn, #next-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /*background-color: #fff;*/
+    border-radius: 50%;
+    top: calc(50% - 25px);
+}
+
+#next-btn {
+    background: url(../image/Sss2.png) no-repeat;
+}
+
+#prev-btn {
+    background: url(../image/Sss1.png) no-repeat;
+
+}
+#prev-btn:hover, #next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 5px;
+}
+
+#next-btn {
+    right: 5px;
+}
+
+/*Стили кнопок навигации*/
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 50%;
+    border: 1px solid #a9a1bd;
+    margin: 3px;
+    box-shadow: 0px 0px 1px 0;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #block-for-slider {
+        margin-top: 80px;
+        width: 100%;
+    }
+}

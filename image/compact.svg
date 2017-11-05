@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 720 720" style="enable-background:new 0 0 720 720;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:5.9387;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="Слой_2">
+	<path class="st0" d="M551.5,575.5h-396c-6.6,0-12-5.4-12-12v-162c0-6.6,5.4-12,12-12h396c6.6,0,12,5.4,12,12v162
+		C563.5,570.1,558.1,575.5,551.5,575.5z"/>
+	<line class="st0" x1="166" y1="390" x2="233" y2="155"/>
+	<line class="st0" x1="539" y1="390" x2="474" y2="155"/>
+	<line class="st1" x1="279" y1="496" x2="421" y2="496"/>
+	<line class="st1" x1="196" y1="390" x2="279" y2="496"/>
+	<line class="st1" x1="504" y1="390" x2="421" y2="496"/>
+	<path class="st1" d="M360,483h-20c-3.3,0-6-2.7-6-6l0,0c0-3.3,2.7-6,6-6h20c3.3,0,6,2.7,6,6l0,0C366,480.3,363.3,483,360,483z"/>
+	<path class="st2" d="M233.6,163.1c-2.8-21.7,7.3-41.9,22.6-56.7c16.9-16.5,39.6-26.9,62.6-31.6c22.2-4.5,45.5-4.3,67.6,0.3
+		c19.5,4.1,38.8,11.3,54.7,23.4c17,12.8,30.8,32,32.9,53.7c0.3,3.1,0.4,6.1,0.2,9.2"/>
+</g>
+<circle class="st3" cx="360" cy="360" r="356"/>
+</svg>

@@ -1,0 +1,674 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+*:focus {outline: none;}
+
+body {
+	font-family: "Helvetica";
+	font: 100%/1,5em;
+}
+
+main {
+	position: relative;
+}
+/*Дополнительный блок для увеличения размера основных блоков*/
+.brusok {
+	width: 100%;
+	height: 100px;
+	background: rgba(255,255,255, 0.0);
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*Приавила для гибкой медиа flexible media */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+hr {
+	margin: 0 auto;
+	width: 84%;
+	position: relative;
+	top: 60px;
+}
+
+figure {
+	position: relative;
+	top: 80px;
+	margin: 0 auto 20px;
+}
+
+figcaption {
+	margin: 0 auto; 
+	width: 300px;
+}
+
+p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*Правила для адаптивной разметки сайта*/
+.block-2 {
+		display: none;
+	}
+
+#menu {
+	display: none;
+}
+
+	.content .cols.col-1,
+	.content .cols.col-2,
+	.content .cols.col-3, 
+	.content .cols.col-4, 
+	.content .cols.col-5, 
+	.content .cols.col-6,
+	.content .cols.col-7,
+	.content .cols.col-8, 
+	.content .cols.col-9,
+	.content .cols.col-10,
+	.content .cols.col-11,
+	.content .cols.col-12 {width: 100%}
+/*Выстраивание стобцов один за другим, выстраивая в строки*/
+	.content .cols {
+	float: left;
+}
+/*Постороение ровной сетки без сдвигов, выставление  */
+.content:before,
+.content:after,
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+/*Очищение от свойства float чтобы стобцы не съезжали*/
+.content:after,
+.row:after {
+	clear: both;
+}	
+
+/*Правила для заголовка (хедера)*/
+header {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 1000;
+	
+}
+.head-line {
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	position: fixed;
+	text-align: center;
+	border-bottom: 3px solid #DCDCDC;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin-top: 17px;
+}
+
+nav a {
+	font-family: "Helvetica";
+	text-decoration: none;
+	color: #140F0B;
+	margin: 0 10px;
+	transition: all 500ms ease;
+	position: relative;
+}
+
+nav a:before {
+	content: "";
+	border-bottom: 2px solid red;
+	position: absolute;
+	top:20px;
+	left: 0;
+	width: 0;
+	transition: all 500ms ease;
+}
+
+nav a:hover:before {
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	border-bottom: 2px solid red;
+	width: 100%;
+}
+
+.logo {
+	position: absolute;
+	left: 50px;
+	top: 10px;
+}
+
+/*Правила для первого экрана*/
+.block-1 {
+	width: 100%;
+	padding-top: 50px;
+	text-align: center;
+	border-bottom: 3px solid #DCDCDC;
+	background-color: #fff;
+}
+
+.header h1, h2 {
+	position: relative;
+	font-family: "Helvetica";
+	font-size: 3em;
+	color: #140F0B;
+	opacity: 0;
+}
+
+.header {
+	margin-top: 20px;
+}
+
+.block-1 span {
+ 	font-family: "Helvetica";
+ 	font-size: 1.5em;
+ 	color: #140F0B;
+}
+
+.bottom_text {
+	position: relative;
+	height: 5%;
+	padding-bottom: 20px;
+	opacity: 0;
+}
+
+.bottom_text span {
+	padding: 0 5px;
+}
+
+.left-side {
+	height: 400px;
+	background: #fff;
+}
+.right-side {
+	height: 400px;
+	background: #fff;
+}
+
+.form_order {
+	width: 350px;
+	height: 350px;
+	background-color: rgba(220,220,220, 0.5);
+	margin: 30px auto 0;
+	padding: 20px 0;
+	border: 1px solid #DCDCDC;
+	border-radius: 3px;
+	position: relative;
+	opacity: 0;
+}
+
+
+
+.left-side img {
+	position: relative;
+	opacity: 0; 
+}
+
+.old_cost, .new_cost {
+	width: 50%;
+	float: left;
+	margin: 5px auto 0;
+}
+
+.form_order span {
+ 	font-family: "Helvetica";
+ 	color: #140F0B;
+ 	font-size: 1.2em;
+ 
+}
+
+/*Правила для формы заказа*/
+.form_order h3 {
+	font-size: 1.5em;
+}
+
+.form_order hr {
+	margin: 0px auto; 
+	top: 55px;
+}
+
+input {
+	font-size: 1em;
+	height: 50px;
+	width: 80%;
+
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+ 	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.button {
+	color: #140F0B;
+	color: #fff;
+	height: 50px;
+	width: 80%;
+	margin-top: 20px;
+	padding: 10px;
+	background: rgba(255,255,255, 0.0);
+	background: #ff3019; 
+	background: #DA0404;
+	font-size: 1.5em;
+	border: 1px solid #DA0404;
+	border-radius: 3px;
+    transition: all 0.25s;
+}
+
+.button:hover {
+	position: relative;
+	cursor: pointer;
+	background: #CC0605;
+	background: rgba(255,255,255, 0.0);
+	border-radius: 3px;
+	color: #DA0404;
+}
+
+.button:active {
+	position: relative;
+	cursor: pointer;
+}
+
+.on_top {
+	position: fixed;
+	right: 20px;
+	bottom: 30px;
+	width: 60px;
+	height: 60px;
+	z-index: 1001;
+	border: 1px solid black;
+	border-radius: 5px;
+	background: rgba(100,100,100, 0.6);
+	background: rgba(220,220,220, 0.5);
+}
+
+.on_top a {
+	color: #fff;
+	padding: 10px 10px;
+	text-decoration: none;
+}
+
+.on_top:hover {
+	background: rgba(220,220,220, 1.0);
+	opacity: 1;
+}
+
+.on_top img {
+	position: relative;
+	top: 10px;
+	left: -6px;
+}
+
+
+/*Правила для второго блока*/
+
+.block-2 {
+	color: #fff;
+	width: 100%;
+	/*height: 900px;*/
+	text-align: center;
+	border-bottom: 3px solid #DCDCDC;
+	background-color: rgba(255,255,255, 0.0);
+	background: url(../image/doski.jpg);
+	background-attachment: fixed;
+}
+
+.block-2 h2 {
+	position: relative;
+	color: #fff;
+	top: 50px;
+}
+
+.block-2 h2:active {
+	opacity: 1;
+}
+
+.block-2 hr {
+	position: relative;
+	top: 60px;
+}
+
+.block-2 img {
+		margin-bottom: 20px;
+}
+
+
+
+.block-2 p {
+		line-height: 25px;
+		margin-bottom: 30px;
+}
+
+.block-2 figure hr {
+	top: 0px;
+	margin-bottom: 15px;
+	width: 10%;
+}
+
+.block-2 h4 {
+		font-size: 1.2em;
+		margin-bottom: 0;
+}
+
+/*Правила для блока 3 - "Фото"*/
+
+.block-3 {
+	width: 100%;
+	background: gray;
+	background: url(../image/fon_blok_3.png);
+	border-bottom: 3px solid #DCDCDC;
+
+
+}
+
+.block-3 h2 {
+	position: relative;
+	font-size: 2.0em;
+	padding-bottom: 15px;
+
+}
+
+.block-3 h3 {
+	position: relative;
+	opacity: 0;
+}
+
+#technical_block-3 li {
+	position: relative;
+	opacity: 0;
+}
+
+.block-3 p {
+	position: relative;
+	opacity: 0;
+}
+
+.left-side-2 {
+	background: rgba(255,255,255, 0.0);
+
+}
+.right-side-2 {
+	background: rgba(255,255,255, 0.0);
+}
+
+.text_block-3 {
+	position: relative;
+	line-height: 25px;
+	letter-spacing: 1px;
+	text-align: center;
+	width: 480px;
+	margin: 0 auto;
+	top: 60px;
+}
+
+.text_block-3 p {
+	text-align: left;
+	margin-top: 20px;
+}
+
+.text_block-3 ul {
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 5px;
+}
+
+.text_block-3 li {
+	line-height: 20px;
+	margin-top: 5px;
+	list-style-image: url(../image/galka_20px.png);
+}
+
+.text_block-3 li span {
+	position: relative;
+	bottom: 3px;
+}
+
+.order_block-3 {
+	opacity: 0;
+	position: relative;
+	height: 100px;
+	margin: 0px auto 0px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.order_block-3 a {
+	margin: 100px auto 0;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	height: 50px;
+	width: 250px;
+	padding: 10px;
+	background: #DA0404; /* Old browsers */
+	font-size: 1.5em;
+	border: 1px solid #DA0404;
+ 	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    transition: all 0.25s;
+}
+
+.order_block-3 a:hover {
+	position: relative;
+	cursor: pointer;
+	background: #CC0605;
+	background: rgba(255,255,255, 0.0);
+	border-radius: 3px;
+	color: #DA0404;
+}
+
+/*Правила для болка 4 - "Отзывы"*/
+
+.block-4 {
+	color: #fff;
+	width: 100%;
+	background: url(../image/sineva.jpg);
+	background-attachment: fixed;
+	text-align: center;
+	border-bottom: 3px solid #DCDCDC;
+}
+
+.block-4 h2 {
+	position: relative;
+	top: 50px;
+	color: #fff;
+}
+
+.block-4 hr {
+	position: relative;
+	top: 60px;
+}
+
+.block-4 img {
+	border: 2px solid black;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.block-4 h3, h4 {
+	margin-bottom: 10px;
+}
+
+.block-4 p {
+	opacity: 0;
+	position: relative;
+	text-align: justify;
+}
+
+#img1_block_4, #img2_block_4, #img3_block_4 {
+	position: relative;
+	opacity: 0;
+}
+
+#podpis1_block_4, #podpis2_block_4, #podpis3_block_4 {
+	position: relative;
+	opacity: 0;
+}
+
+/*Правила для блока 5 "Как мы работаем" */
+
+.block-5 {
+	width: 100%;
+	background: url(../image/fon_blok_3.png);
+	text-align: center;
+	border-bottom: 3px solid #DCDCDC;
+}
+
+.block-5 img {
+	border: 1px solid black;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.block-5 h2 {
+	position: relative;
+	top: 50px;
+}
+
+.block-5 figure hr {
+	width: 10%;
+	top:10px;
+	margin-bottom: 20px;
+
+}
+
+.block-5 figcaption {
+		width: 90%;
+	}
+
+.shipping_text {
+	width: 100%;
+	height: 100px;
+	margin: 100px auto 5%;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.shipping_text span {
+	line-height: 30px;
+}
+
+.shipping_text hr {
+	top:0px;
+	margin-bottom: 50px;
+
+}
+
+/*Правила для блока 6 "Заказать" */
+.block-6 {
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
+	border-bottom: 3px solid #DCDCDC;
+	background-color: #fff;
+
+}
+
+
+footer {
+	text-align: center;
+	width: 100%;
+	line-height: 50px;
+}
+
+@media screen and (min-width: 900px) {
+
+	#menu {
+		display: block;
+	}
+	.content .cols.col-1 {width: 8.333333%}
+	.content .cols.col-2 {width: 16.666666%}
+	.content .cols.col-3 {width: 25%}
+	.content .cols.col-4 {width: 33.333333%}
+	.content .cols.col-5 {width: 41.666666%}
+	.content .cols.col-6 {width: 50%}
+	.content .cols.col-7 {width: 58.333333%}
+	.content .cols.col-8 {width: 66.666666%}
+	.content .cols.col-9 {width: 75%}
+	.content .cols.col-10 {width: 83.333333%}
+	.content .cols.col-11 {width: 91.666666%}
+	.content .cols.col-12 {width: 100%}
+	.block-2 {
+		display: block;
+	}
+	
+}
+
+@media screen and (min-width: 640px) and (max-width: 900px){
+	#menu {
+		display: block;
+	}
+	.head-line {
+		text-align: right;
+	}
+	.text_block-3, figcaption {
+		width: 90%;
+	}
+
+}
+
+@media screen and (max-width: 600px ) {
+
+	h2 {
+		font-size: 2.5em;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	.text_block-3, figcaption {
+		width: 90%;
+	}
+
+	.text_block-3 ul {
+		font-size: 0.9em;
+	}
+
+	.header h1 {
+		font-size: 2em;
+	}
+
+	.header h2 {
+		font-size: 1.5em;
+	}
+	.form_order {
+		width: 90%;
+	}
+	.form_order span {
+		font-size: 1em;
+	}
+	
+	.form_order input {
+		font-size: 0.9em;
+	}
+
+	.shipping_text {
+		margin-bottom: 40%;
+	}
+
+	footer {
+		line-height: 25px;
+		padding: 10px 5px;
+	}
+
+	.form_order hr {
+		display: none;
+	}
+}
